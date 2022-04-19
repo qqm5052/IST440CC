@@ -20,6 +20,7 @@ layout = [
     [sg.Text('Puzzle 1', size=(16,1)), sg.Checkbox('Checkbox', size=(13,1)), sg.Checkbox('Light', size=(14,1), text_color='Red', key='chk_light'), sg.Checkbox('Checkbox', size=(13,1)), sg.Checkbox('Checkbox', size=(0,1))],
     [sg.Text('Puzzle 2', size=(16,1)), sg.Checkbox('Checkbox', size=(13,1)), sg.Checkbox('Water', size=(14,1), text_color='Red', key='chk_water'),  sg.Checkbox('Checkbox', size=(13,1)), sg.Checkbox('Checkbox', size=(0,1))],
     [sg.Text('Puzzle 3', size=(16,1)), sg.Checkbox('Checkbox', size=(13,1)), sg.Checkbox('Fire', size=(14,1), text_color='Red', key='chk_fire'),  sg.Checkbox('Checkbox', size=(13,1)), sg.Checkbox('Checkbox', size=(0,1))],
+     
     [sg.Button('Refresh', size=(81,2))]
 ]
 
