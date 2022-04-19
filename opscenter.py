@@ -6,7 +6,7 @@
 import PySimpleGUI as sg
 from log import Log
 
-#data = Log.getstatus_json()    #Is updated on Refresh
+#data = Log.getstatus_json()    #Is updated on Refresh; wont need this unless eve server is up
 
 headings = ['Puzzle','Team 1', 'Team 2', 'Team 3','Team 4']  # the text of the headings
 
