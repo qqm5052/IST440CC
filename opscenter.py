@@ -30,8 +30,6 @@ def updatechkbox(chkkey:str):
     window[chkkey].Update(text_color="Green")
 
 
-
-
 # Create the window
 window = sg.Window("Demo", layout, margins=(200,100))
 
@@ -42,10 +40,9 @@ while True:
     if event == sg.WIN_CLOSED:
         break
     
-    
     # This is where we start looking for puzzle completion messages
     # How to get values of a box: values['chk_light']
-    for i in data["_items"]:
+    for i in data["_items"]:    # Will crash if no connection to eve
         if(i["message"] == "Test post request 2."):
             updatechkbox('chk_light')
 window.close()
