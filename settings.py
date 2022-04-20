@@ -13,7 +13,7 @@ status_schema = {
         'type': 'string',
         'required': True,
     },
-    'status': {
+    'message': {
         'type': 'string',
         'required': True,
     },
