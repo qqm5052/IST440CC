@@ -6,7 +6,7 @@
 import PySimpleGUI as sg
 from log import Log
 
-#data = Log.getstatus_json()    #Is updated on Refresh; wont need this unless eve server is up
+
 
 headings = ['Puzzle','Team 1', 'Team 2', 'Team 3','Team 4']  # the text of the headings
 
@@ -43,7 +43,12 @@ while True:
     
     # This is where we start looking for puzzle completion messages
     # How to get values of a box: values['chk_light']
+    data = Log.getstatus_json()    #Is updated on Refresh; wont need this unless eve server is up
     for i in data["_items"]:    # Will crash if no connection to eve
-        if(i["message"] == "Test post request 2."):
+        if(i["message"] == "Water Puzzle Completed"):
+            updatechkbox('chk_water')
+        if(i["message"] == "Light Puzzle Completed"):
             updatechkbox('chk_light')
+        if(i["message"] == "Fire Puzzle Completed"):
+            updatechkbox('chk_fire')
 window.close()
