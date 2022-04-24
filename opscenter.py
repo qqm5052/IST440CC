@@ -17,9 +17,9 @@ layout = [
     [sg.Text(h, size=(10,1), font='_ 18') for h in headings],
 
     # Should only have to make edits below for your puzzles
-    [sg.Text('Puzzle 1', size=(16,1)), sg.Checkbox('Checkbox', size=(13,1)), sg.Checkbox('Light', size=(14,1), text_color='Red', key='chk_light'), sg.Checkbox('Sound Puzzle', size=(13,1), text_color='Red', key='chk_sound'), sg.Checkbox('Checkbox', size=(0,1))],
-    [sg.Text('Puzzle 2', size=(16,1)), sg.Checkbox('Checkbox', size=(13,1)), sg.Checkbox('Water', size=(14,1), text_color='Red', key='chk_water'),  sg.Checkbox('Flow Puzzle', size=(13,1), text_color='Red', key='chk_flow'), sg.Checkbox('Checkbox', size=(0,1))],
-    [sg.Text('Puzzle 3', size=(16,1)), sg.Checkbox('Checkbox', size=(13,1)), sg.Checkbox('Fire', size=(14,1), text_color='Red', key='chk_fire'),  sg.Checkbox('Morse Puzzle', size=(13,1), text_color='Red', key='chk_morse'), sg.Checkbox('Checkbox', size=(0,1))],
+    [sg.Text('Puzzle 1', size=(16,1)), sg.Checkbox('Checkbox', size=(13,1)), sg.Checkbox('Light', size=(14,1), text_color='Red', key='chk_light'), sg.Checkbox('Sound Puzzle', size=(13,1), text_color='Red', key='chk_sound'), sg.Checkbox('Rover Access', size=(0,1), text_color='Red', key='chk_rover')],
+    [sg.Text('Puzzle 2', size=(16,1)), sg.Checkbox('Checkbox', size=(13,1)), sg.Checkbox('Water', size=(14,1), text_color='Red', key='chk_water'),  sg.Checkbox('Flow Puzzle', size=(13,1), text_color='Red', key='chk_flow'), sg.Checkbox('Gate Access', size=(0,1), text_color='Red', key='chk_gate')],
+    [sg.Text('Puzzle 3', size=(16,1)), sg.Checkbox('Checkbox', size=(13,1)), sg.Checkbox('Fire', size=(14,1), text_color='Red', key='chk_fire'),  sg.Checkbox('Morse Puzzle', size=(13,1), text_color='Red', key='chk_morse'), sg.Checkbox('Mission Complete', size=(0,1), text_color='Red', key='chk_mission')],
      
     [sg.Button('Refresh', size=(81,2))]
 ]
@@ -61,4 +61,12 @@ while True:
             updatechkbox('chk_flow')
         if(i["message"] == "Morse Puzzle Completed"):
             updatechkbox('chk_morse')
+            
+        # Team 4 Puzzles
+        if(i["message"] == "Rover Puzzle Completed"):
+            updatechkbox('chk_rover')
+        if(i["message"] == "Numpad Puzzle Completed"):
+            updatechkbox('chk_gate')
+        if(i["message"] == "Mission Completed"):
+            updatechkbox('chk_mission')
 window.close()
