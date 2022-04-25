@@ -47,11 +47,11 @@ while True:
     for i in data["_items"]:    # Will crash if no connection to eve
        
         # Team 2 Puzzles
-        if(i["message"] == "Water Puzzle Completed"):
+        if(i["message"] == "Water Puzzle Completed."):
             updatechkbox('chk_water')
-        if(i["message"] == "Light Puzzle Completed"):
+        if(i["message"] == "Light Puzzle Completed."):
             updatechkbox('chk_light')
-        if(i["message"] == "Fire Puzzle Completed"):
+        if(i["message"] == "Fire Puzzle Completed."):
             updatechkbox('chk_fire')
        
         # Team 3 Puzzles
