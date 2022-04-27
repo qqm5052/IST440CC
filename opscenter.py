@@ -32,7 +32,7 @@ def updatechkbox(chkkey:str):
 
 
 # Create the window
-window = sg.Window("Demo", layout, margins=(200,100))
+window = sg.Window("IST440 Command Center", layout, margins=(200,100))
 
 # Create an event loop
 while True:
