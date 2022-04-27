@@ -17,9 +17,9 @@ layout = [
     [sg.Text(h, size=(10,1), font='_ 18') for h in headings],
 
     # Should only have to make edits below for your puzzles
-    [sg.Text('Puzzle 1', size=(16,1)), sg.Checkbox('Rouellete Puzzle', size=(13,1), text_color='Red', key='chk_roulette'), sg.Checkbox('Light', size=(14,1), text_color='Red', key='chk_light'), sg.Checkbox('Sound Puzzle', size=(13,1), text_color='Red', key='chk_sound'), sg.Checkbox('Rover Access', size=(0,1), text_color='Red', key='chk_rover')],
-    [sg.Text('Puzzle 2', size=(16,1)), sg.Checkbox('stacker Puzzle', size=(13,1), text_color='Red', key='chk_stacker'), sg.Checkbox('Water', size=(14,1), text_color='Red', key='chk_water'),  sg.Checkbox('Flow Puzzle', size=(13,1), text_color='Red', key='chk_flow'), sg.Checkbox('Gate Access', size=(0,1), text_color='Red', key='chk_gate')],
-    [sg.Text('Puzzle 3', size=(16,1)), sg.Checkbox('snake Puzzle', size=(13,1), text_color='Red', key='chk_snake'), sg.Checkbox('Fire', size=(14,1), text_color='Red', key='chk_fire'),  sg.Checkbox('Morse Puzzle', size=(13,1), text_color='Red', key='chk_morse'), sg.Checkbox('Mission Complete', size=(0,1), text_color='Red', key='chk_mission')],
+    [sg.Text('Puzzle 1', size=(16,1)), sg.Text('  '), sg.Checkbox('Rouellete Puzzle', size=(13,1), text_color='Red', key='chk_roulette'), sg.Text('            '), sg.Checkbox('Light', size=(14,1), text_color='Red', key='chk_light'), sg.Text('   '), sg.Checkbox('Sound Puzzle', size=(13,1), text_color='Red', key='chk_sound'), sg.Text('   '), sg.Checkbox('Rover Access', size=(0,1), text_color='Red', key='chk_rover')],
+    [sg.Text('Puzzle 2', size=(16,1)), sg.Text('  '), sg.Checkbox('Stacker Puzzle', size=(13,1), text_color='Red', key='chk_stacker'), sg.Text('            '), sg.Checkbox('Water', size=(14,1), text_color='Red', key='chk_water'), sg.Text('   '), sg.Checkbox('Flow Puzzle', size=(13,1), text_color='Red', key='chk_flow'), sg.Text('   '), sg.Checkbox('Gate Access', size=(0,1), text_color='Red', key='chk_gate')],
+    [sg.Text('Puzzle 3', size=(16,1)), sg.Text('  '), sg.Checkbox('Snake Puzzle', size=(13,1), text_color='Red', key='chk_snake'), sg.Text('            '), sg.Checkbox('Fire', size=(14,1), text_color='Red', key='chk_fire'), sg.Text('   '), sg.Checkbox('Morse Puzzle', size=(13,1), text_color='Red', key='chk_morse'), sg.Text('   '), sg.Checkbox('Mission Complete', size=(0,1), text_color='Red', key='chk_mission')],
      
     [sg.Button('Refresh', size=(81,2))]
 ]
